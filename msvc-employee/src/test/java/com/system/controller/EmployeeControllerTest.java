@@ -128,7 +128,7 @@ class EmployeeControllerTest {
                         .contentType("application/json"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(1))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.firStName").value("John"));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.firstName").value("John"));
     }
 
     @Test
