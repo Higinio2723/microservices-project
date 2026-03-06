@@ -16,6 +16,8 @@ public class Mapper {
                 .firstLastName(e.getFirstLastName())
                 .secondLastName(e.getSecondLastName())
                 .age(e.getAge())
+                .sex(e.getSex())
+                .dateBirth(e.getDateBirth())
                 .position(e.getPosition())
                 .systemRegistrationDate(e.getSystemRegistrationDate())
                 .status(e.isStatus())
