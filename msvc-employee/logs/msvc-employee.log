@@ -7714,3 +7714,4 @@ com.system.exception.NotFoundException: Empleado no encontrado
         id=?
 2026-03-06 16:11:49 [http-nio-8082-exec-6] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [BIGINT] - [2]
 2026-03-06 16:12:01 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2026-03-06 16:17:01 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration

@@ -1,6 +1,0 @@
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\beans\GatewayBeans.java
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\dtos\TokenDto.java
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\dtos\UserDto.java
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\filters\AuthFilter.java
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\filters\SecurityHeadersFilter.java
-C:\Users\OWNER\Desktop\microservice-project\gateway\src\main\java\com\gonzalandero\gateway\GatewayApplication.java

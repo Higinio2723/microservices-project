@@ -2,11 +2,9 @@ package com.system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@EnableDiscoveryClient
 @ComponentScan(basePackages = {"com.system.controller", "com.system.service", "com.system.repository"})
 public class MsvcEmployeeApplication {
 
