@@ -1,0 +1,47 @@
+-------------------------------
+Maven commands to build jars
+
+mvn clean
+mvn install package 
+
+-------------------------------
+
+commands to build images
+
+docker build -t msvc-registry-server:latest .
+
+docker build -t msvc-gateway-server:latest .
+
+docker build -t msvc-employee:latest .
+
+docker ps
+
+docker images
+
+-------------------------------------------------  
+Running the images
+
+
+docker run -p 8761:8761 --name msvc-registry-server 9a93da8bfec3docker 
+
+docker run -p 4040:4040 --name msvc-gateway-server 60ab4b20089f
+
+docker run -p 8082:8082 --name msvc-employee 00be0af15e37	 
+
+
+--------------------------------------------------
+Run a compose
+
+docker compose -f file.yaml up   
+
+docker compose down
+
+--------------------------------------------------
+Eliminar contenedor
+
+docker rm msvc-employee
+msvc-employee
+
+Eliminar Imagen
+
+docker rmi -f [identificador-docker]
