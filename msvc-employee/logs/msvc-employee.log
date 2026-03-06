@@ -12298,3 +12298,20 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-03-06 17:08:55 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -The response status is 200
 2026-03-06 17:13:24 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
 2026-03-06 17:18:24 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2026-03-06 17:23:24 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2026-03-06 17:23:55 [SpringApplicationShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -Unregistering application MSVC-EMPLOYEE with eureka with status DOWN
+2026-03-06 17:23:55 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -Saw local status change event StatusChangeEvent [timestamp=1772839435892, current=DOWN, previous=UP]
+2026-03-06 17:23:55 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -DiscoveryClient_MSVC-EMPLOYEE/msvc-employee:305402de7aee7b3976ec8d3f31c4b420: registering service...
+2026-03-06 17:23:55 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -DiscoveryClient_MSVC-EMPLOYEE/msvc-employee:305402de7aee7b3976ec8d3f31c4b420 - registration status: 204
+2026-03-06 17:23:55 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06 17:23:55 [SpringApplicationShutdownHook] INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2026-03-06 17:23:55 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -
+    
+    drop table if exists employee CASCADE 
+2026-03-06 17:23:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2026-03-06 17:23:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2026-03-06 17:23:56 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -Shutting down DiscoveryClient ...
+2026-03-06 17:23:59 [DiscoveryClient-0] WARN  com.netflix.discovery.TimedSupervisorTask -task supervisor shutting down, can't accept the task
+2026-03-06 17:23:59 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -Unregistering ...
+2026-03-06 17:23:59 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -DiscoveryClient_MSVC-EMPLOYEE/msvc-employee:305402de7aee7b3976ec8d3f31c4b420 - deregister  status: 200
+2026-03-06 17:23:59 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -Completed shut down of DiscoveryClient
