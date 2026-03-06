@@ -37,6 +37,15 @@ springdoc:
 # ==============================
 # = LOGGING CONFIGURATION =
 # ==============================
+# ==============================
+# = EUREKA CLIENT CONFIGURATION =
+# ==============================
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
 logging:
   level:
     root: INFO
