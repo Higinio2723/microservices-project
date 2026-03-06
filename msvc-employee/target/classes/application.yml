@@ -37,15 +37,6 @@ springdoc:
 # ==============================
 # = LOGGING CONFIGURATION =
 # ==============================
-# ==============================
-# = EUREKA CLIENT CONFIGURATION =
-# ==============================
-eureka:
-  client:
-    enabled: false
-    register-with-eureka: false
-    fetch-registry: false
-
 logging:
   level:
     root: INFO
@@ -60,3 +51,12 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger -%msg%n"
+# ==============================
+# = EUREKA CLIENT CONFIGURATION =
+# ==============================
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}

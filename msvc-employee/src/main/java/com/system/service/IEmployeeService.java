@@ -5,7 +5,6 @@ import com.system.exception.NotFoundException;
 import com.system.mapper.Mapper;
 import com.system.model.Employee;
 import com.system.repository.EmployeeRepository;
-import javax.persistence.*;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,6 +53,8 @@ public class IEmployeeService  implements EmployeeService{
                 .secondName(employeeDto.getSecondName())
                 .firstLastName(employeeDto.getFirstLastName())
                 .secondLastName(employeeDto.getSecondLastName())
+                .sex(employeeDto.getSex())
+                .dateBirth(employeeDto.getDateBirth())
                 .age(employeeDto.getAge())
                 .position(employeeDto.getPosition())
                 .systemRegistrationDate(employeeDto.getSystemRegistrationDate())
@@ -73,6 +74,8 @@ public class IEmployeeService  implements EmployeeService{
        employee.setSecondName(employeeDto.getSecondName());
        employee.setFirstLastName(employeeDto.getFirstLastName());
        employee.setSecondLastName(employeeDto.getSecondLastName());
+       employee.setSex(employeeDto.getSex());
+       employee.setDateBirth(employeeDto.getDateBirth());
        employee.setAge(employeeDto.getAge());
        employee.setPosition(employeeDto.getPosition());
        employee.setStatus(employeeDto.isStatus());

@@ -69,9 +69,9 @@ class EmployeeControllerTest {
 
         StringBuilder data = new StringBuilder();
         data.append("{");
-        data.append("\"firtName\": \"John\",");
+        data.append("\"firstName\": \"John\",");
         data.append("\"secondName\": \"Doe\",");
-        data.append("\"firtLastName\": \"GUNNES\",");
+        data.append("\"firstLastName\": \"GUNNES\",");
         data.append("\"secondLastName\": \"\",");
         data.append("\"age\": 20,");
         data.append("\"sex\": \"H\",");
@@ -85,7 +85,7 @@ class EmployeeControllerTest {
                         .contentType("application/json"))
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").exists())
-              .andExpect(MockMvcResultMatchers.jsonPath("$.firtName").value("John"));
+              .andExpect(MockMvcResultMatchers.jsonPath("$.firstName").value("John"));
 
     }
 
@@ -112,9 +112,9 @@ class EmployeeControllerTest {
 
         StringBuilder data = new StringBuilder();
         data.append("{");
-        data.append("\"firtName\": \"John\",");
+        data.append("\"firstName\": \"John\",");
         data.append("\"secondName\": \"Doe\",");
-        data.append("\"firtLastName\": \"GUNNES\",");
+        data.append("\"firstLastName\": \"GONZALEZ\",");
         data.append("\"secondLastName\": \"\",");
         data.append("\"age\": 20,");
         data.append("\"sex\": \"H\",");
@@ -128,7 +128,7 @@ class EmployeeControllerTest {
                         .contentType("application/json"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(1))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.firtName").value("John"));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.firstName").value("John"));
     }
 
     @Test

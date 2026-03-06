@@ -1,0 +1,10 @@
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/MsvcEmployeeApplication.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/dto/EmployeeDTO.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/model/Employee.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/controller/EmployeeController.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/service/EmployeeService.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/repository/EmployeeRepository.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/swagger/OpenApiConfig.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/mapper/Mapper.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/exception/NotFoundException.java
+/home/hgonzalez/microservice-project/msvc-employee/src/main/java/com/system/service/IEmployeeService.java

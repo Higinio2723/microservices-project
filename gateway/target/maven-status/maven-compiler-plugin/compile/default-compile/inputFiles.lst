@@ -1,0 +1,6 @@
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/GatewayApplication.java
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/beans/GatewayBeans.java
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/dtos/TokenDto.java
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/dtos/UserDto.java
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/filters/AuthFilter.java
+/home/hgonzalez/microservice-project/gateway/src/main/java/com/gonzalandero/gateway/filters/SecurityHeadersFilter.java
