@@ -1,0 +1,19 @@
+services:
+  msvc-usuarios:
+    container_name: msvc-registry-server
+    image: msvc-registry-server:latest
+#    build:
+#      context: ./
+#      dockerfile: ./msvc-usuarios/Dockerfile
+    ports:
+      - "8761:8761"
+    environment:
+      PORT: 8761
+    networks:
+      - spring
+    restart: always
+
+
+networks:
+    spring:
+      driver: bridge
