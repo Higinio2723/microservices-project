@@ -139,3 +139,10 @@
 2026-03-06 10:11:22 [http-nio-8082-exec-8] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([sex9_0_] : [VARCHAR]) - [null]
 2026-03-06 10:11:22 [http-nio-8082-exec-8] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([status10_0_] : [BOOLEAN]) - [true]
 2026-03-06 10:11:22 [http-nio-8082-exec-8] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([system_11_0_] : [DATE]) - [2026-03-06]
+2026-03-06 10:15:38 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06 10:15:38 [SpringApplicationShutdownHook] INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2026-03-06 10:15:38 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -
+    
+    drop table if exists employee CASCADE 
+2026-03-06 10:15:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2026-03-06 10:15:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
