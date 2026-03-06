@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec53eb3a-2fc0-4377-a655-b917ea0f0cd6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../auth-server" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../msvc-employee/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msvc-employee/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msvc-employee/logs/msvc-employee.log" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/logs/msvc-employee.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msvc-employee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msvc-employee/src/main/java/com/system/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/src/main/java/com/system/service/IEmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msvc-employee/src/test/java/com/system/controller/EmployeeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/src/test/java/com/system/controller/EmployeeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/2026-03-06T13-44-01_085-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/2026-03-06T13-46-04_447-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/TEST-com.system.MsvcEmployeeApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/TEST-com.system.MsvcEmployeeApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/TEST-com.system.controller.EmployeeControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/TEST-com.system.controller.EmployeeControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/com.system.MsvcEmployeeApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/com.system.MsvcEmployeeApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/com.system.controller.EmployeeControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/surefire-reports/com.system.controller.EmployeeControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msvc-employee/target/classes/com/system/service/IEmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/classes/com/system/service/IEmployeeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msvc-employee/target/test-classes/com/system/controller/EmployeeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../msvc-employee/target/test-classes/com/system/controller/EmployeeControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +57,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.RegistryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.registry-server [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.registry-server [install,package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;featureregistry-server&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/OWNER/Desktop/microservice-project/registry-server&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.RegistryServerApplication.executor": "Run",
+    "Maven.registry-server [clean,package].executor": "Run",
+    "Maven.registry-server [install,package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "featureregistry-server",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/OWNER/Desktop/microservice-project/registry-server"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean package" />
