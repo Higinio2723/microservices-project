@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@ComponentScan(basePackages = {"com.system.controller", "com.system.service", "com.system.repository"})
+@ComponentScan(basePackages = {"com.system.*"})
 public class MsvcEmployeeApplication {
 
 	public static void main(String[] args) {

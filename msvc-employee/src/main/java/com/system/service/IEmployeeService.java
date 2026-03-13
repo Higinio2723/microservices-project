@@ -27,15 +27,12 @@ public class IEmployeeService  implements EmployeeService{
 
     @Override
     public List<EmployeeDTO> getAllEmployees(String name) {
-        String searchName = name.toLowerCase();
-        return employeeRepository.findAll()
+
+        return employeeRepository.findByFirstName(name)
                 .stream()
                 .map(Mapper::toDTO)
-                .filter(emp ->
-                    (emp.getFirstName() != null && emp.getFirstName().toLowerCase().contains(searchName)) ||
-                    (emp.getSecondName() != null && emp.getSecondName().toLowerCase().contains(searchName))
-                )
                 .toList();
+
     }
 
     @Override

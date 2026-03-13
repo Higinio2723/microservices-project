@@ -4,10 +4,10 @@ import com.system.dto.EmployeeDTO;
 import com.system.service.EmployeeService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 
@@ -16,8 +16,13 @@ import java.util.List;
 @Tag(name = "Employee", description = "API to gestion on Employee")
 public class EmployeeController {
 
-    @Autowired
-    EmployeeService employeeService;
+    //@Autowired
+    private EmployeeService employeeService;
+
+    public EmployeeController(EmployeeService employeeService){
+        this.employeeService = employeeService;
+    }
+
 
     @GetMapping("employees")
     @Operation(summary = "Get all employees", description = "Get a list of all employees")
@@ -33,7 +38,7 @@ public class EmployeeController {
 
     @PostMapping("employees")
     @Operation(summary = "Create a new employee", description = "Create a new employee with the provided information")
-    public ResponseEntity<EmployeeDTO> createEmployee(@RequestBody EmployeeDTO employeeDto) {
+    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeDTO employeeDto) {
         EmployeeDTO created = employeeService.createEmployee(employeeDto);
         return ResponseEntity.created(URI.create("/employees" + created.getId())).body(created);
     }
@@ -41,7 +46,7 @@ public class EmployeeController {
     @PutMapping("employees/{id}")
     @Operation(summary = "Update an existing employee", description = "Update the information of an existing employee by ID")
     public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id,
-                                                      @RequestBody EmployeeDTO employeeDto) {
+                                                      @Valid @RequestBody EmployeeDTO employeeDto) {
         return ResponseEntity.ok(employeeService.updateEmployee(id, employeeDto));
     }
 
